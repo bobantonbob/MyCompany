@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>"Заняття-29" MyCompany - {{ contex.page_title }}</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Сайт "Проба Пера" MyCompany</h1>
+        <hr>
+    </header>
+    <nav>
+        |
+        <a href="{{ url_for('index') }}">Додому</a>
+        |
+        <a href="{{ url_for('about') }}">Про все Це...</a>
+        |
+        <a href="{{ url_for('news') }}">Що є нового</a>
+        |
+        <a href="{{ url_for('deps') }}">Департамент</a>
+        |
+        <a href="{{ url_for('contacts') }}">Телефони</a>
+        |
+        <hr>
+    </nav>
+    <main>
+        {% block content %}{% endblock content %}
+
+
+    </main>
+    <footer>
+        <hr>
+        <h4>
+            Copyright: &copy; Academy IT-Stem
+        </h4>
+
+    </footer>
+
+
+    <h1>Базовий шаблон</h1>
+
+
+
+
+</body>
+</html>

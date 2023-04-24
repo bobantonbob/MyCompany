@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    font: 15pt "Trebuchet MS";
+    padding: 10px 10%;
+}
+
+header > h1 {
+    color: red;
+}
+
+nav > a {
+    text-decoration: none;
+    margin: 5px 25px;
+    color: teal;
+    font: 15pt "Consolas";
+}
+
+nav > a:hover {
+    color: red;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+.content-panel >h2 {
+    color: purple;
+}
+
+.content-panel >h3 {
+    color: navy;
+}
+
+footer > h4 {
+    color: gray;
+
+}
